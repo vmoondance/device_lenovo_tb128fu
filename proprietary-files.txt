@@ -129,9 +129,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libaidenoiser.so
-vendor/lib64/libaw_portrait_mask.so
 vendor/lib64/libbitmlengine.so
-vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcapiv2svacnn.so
@@ -143,7 +141,6 @@ vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpege.so
 vendor/lib64/liblenovo_blur.so
 vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libNvBeautyEffect.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
@@ -179,8 +176,6 @@ vendor/lib64/camera/components/com.qti.node.eisv2.so
 vendor/lib64/camera/components/com.qti.node.eisv3.so
 vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/components/com.qti.node.lenovobeauty.so
-vendor/lib64/camera/components/com.qti.node.lenovoportrait.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.node.remosaic.so
 vendor/lib64/camera/components/com.qti.node.stich.so
@@ -208,30 +203,6 @@ vendor/lib64/camera/components/com.qtistatic.stats.aec.so
 vendor/lib64/camera/components/com.qtistatic.stats.af.so
 vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-
-# Camera Configs
-vendor/etc/camera/portrait/1_0.jpg
-vendor/etc/camera/portrait/1_90.jpg
-vendor/etc/camera/portrait/2_0.jpg
-vendor/etc/camera/portrait/2_90.jpg
-vendor/etc/camera/portrait/3_0.jpg
-vendor/etc/camera/portrait/3_90.jpg
-vendor/etc/camera/portrait/4_0.jpg
-vendor/etc/camera/portrait/4_90.jpg
-vendor/etc/camera/portrait/5_0.jpg
-vendor/etc/camera/portrait/5_90.jpg
-vendor/etc/camera/portrait/6_0.jpg
-vendor/etc/camera/portrait/6_90.jpg
-vendor/etc/camera/portrait/7_0.jpg
-vendor/etc/camera/portrait/7_90.jpg
-vendor/etc/camera/portrait/8_0.jpg
-vendor/etc/camera/portrait/8_90.jpg
-vendor/etc/camera/portrait/9_0.jpg
-vendor/etc/camera/portrait/9_90.jpg
-vendor/etc/camera/portrait/10_0.jpg
-vendor/etc/camera/portrait/10_90.jpg
-vendor/etc/camera/portrait/AW_Portrait_Mask_License.data
-vendor/etc/camera/portrait/PS_D0_n_v3_finger_F16.m.bin
 
 # Camera Feature
 vendor/lib64/com.qti.chiusecaseselector.so

@@ -12,9 +12,7 @@ WITH_GMS := true
 TARGET_DISABLE_EPPE := true
 
 # Gapps
-ifeq ($(WITH_GMS), false)
-$(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
-endif
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
