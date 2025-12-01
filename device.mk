@@ -10,8 +10,22 @@ $(call inherit-product, device/lenovo/sm6225-common/bengal.mk)
 # Inherit from vendor blobs
 $(call inherit-product, vendor/lenovo/tb128fu/tb128fu-vendor.mk)
 
+# Gapps
+#$(call inherit-product, vendor/gapps/build/main.mk)
+
 # API Level
-PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 35
+
+# Vendor API Level for Android 16
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.api_level=202506 \
+    ro.board.api_level=202506 \
+    ro.board.api_frozen=true
+
+# VNDK Version for Android 16
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vndk.version=35 \
+    ro.llndk.api_level=35
 
 # Audio configs
 PRODUCT_COPY_FILES += \
@@ -33,3 +47,21 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Keep device running on zygote crash for debugging (similar to eng builds)
+PRODUCT_SYSTEM_PROPERTIES += \
+	init.svc_debug.no_fatal.zygote=true \
+	init.svc_debug.no_fatal.surfaceflinger=true \
+	init.svc_debug.no_fatal.servicemanager=true \
+	init.svc_debug.no_fatal.vold=true
+
+# Enable ADB access for debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.debuggable=1 \
+	ro.secure=0 \
+	persist.service.adb.enable=1 \
+	persist.service.debuggable=1 \
+	persist.sys.usb.config=mtp,adb
+
+# Ensure custom init.target.rc with early adb is installed
+PRODUCT_COPY_FILES += \
+    device/lenovo/sm6225-common/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc

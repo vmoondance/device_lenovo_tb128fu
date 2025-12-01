@@ -8,17 +8,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# WITH_GMS := true
-# TARGET_DISABLE_EPPE := true
+#WITH_GMS := true
 
-# Gapps
-# $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+# Enable insecure ADB and full debuggability for userdebug builds of this device
+WITH_ADB_INSECURE := true
+PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG :=
 
-# Inherit some common Evolution-X stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from tb128fu device
 $(call inherit-product, device/lenovo/tb128fu/device.mk)
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+PRODUCT_ENABLE_UFFD_GC := false
 
 PRODUCT_NAME := lineage_tb128fu
 PRODUCT_DEVICE := tb128fu
