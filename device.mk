@@ -43,9 +43,12 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-# Soong namespaces
+# 32-bit Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/sm8250/audio/primary-hal \
+    hardware/qcom-caf/sm8250/audio/pal \
+    hardware/qcom-caf/sm8250/audio/agm
 
 # Keep device running on zygote crash for debugging (similar to eng builds)
 PRODUCT_SYSTEM_PROPERTIES += \

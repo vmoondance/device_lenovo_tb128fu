@@ -62,7 +62,6 @@ vendor/etc/awinic_cali.wav
 vendor/firmware/aw882xx_pid_2013_acf.bin
 
 # Audio HAL
-vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/libaudio_log_utils.so
 
 # Audio FX
@@ -75,7 +74,6 @@ vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio Libraries
-vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -85,18 +83,9 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcomprcapture.so
 vendor/lib/libdrc.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
 vendor/lib/libqtigef.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Camera
@@ -132,9 +121,7 @@ vendor/lib64/libaidenoiser.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
-vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
-vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libipebpsstriping.so
@@ -276,3 +263,4 @@ vendor/firmware/wigig/wigig.ini
 vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
+vendor/lib64/libc++_shared.so
